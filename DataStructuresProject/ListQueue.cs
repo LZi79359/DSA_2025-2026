@@ -41,9 +41,7 @@ namespace DataStructuresProject
         public T Dequeue()
         {
             if (head == null)
-            {
                 throw new InvalidOperationException("You cannot dequeue from an empty Queue!");
-            }
 
             T toBeRemoved = head.Element;
             if (head == tail)
